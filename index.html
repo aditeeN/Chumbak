@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "icon" href ="img/favicon.jpg" type = "image/x-icon"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $(".toggle").on("click", function () {
+                if($(".item").hasClass("active")){
+                   $(".item").removeClass("active"); 
+                }
+                else{
+                    $(".item").addClass("active");
+                }              
+            })
+        })
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Chumbak</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="chumbak-nav">
+            <ul>
+                <div class="left-icons">
+                    <li class="toggle">
+                        <a href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="search">
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                </div>
+                <div class="left-tabs ">
+                    <li class="item ">
+                        <a href="#">Editorials</a>
+                    </li>
+                    <li class="item ">
+                        <a href="#">Fashion  &amp; Beauty</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Home  &amp; Decor</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Sale</a>
+                    </li>
+                    <li class="item border-item">
+                        <a href="#">Gifting</a>
+                    </li>
+                </div>
+
+
+                <h2 class="logo">CHUMBAK</h2>
+                <div class="right-tabs">
+                    <li class="item">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Our Stores</a>
+                    </li>
+                    <li class="item log-in">
+                        <a href="#">Login</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Track Order</a>
+                    </li>
+                    <li class="item">
+                        <a href="#">Contact Us</a>
+                    </li>
+
+                </div>
+                <div class="right-icons">
+                    <li class="login-btn">
+                        <a href="#" class="btn login ">Login</a>
+                    </li>
+                    <li class="cart">
+                        <a href="#">
+                            <i class="fas fa-shopping-bag "></i>
+                        </a>
+                    </li>
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="showcases">
+            <div id="carouselExampleSlidesOnly" class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <img src="img/hero_1.jpg" alt="Chumbak" class="showcase__logo">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="img/hero.jpg" alt="Chumbak" class="showcase__logo">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="img/hero_2.jpg" alt="Chumbak" class="showcase__logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="intro">
+            <header>
+                <div class="intro-info">
+                    <img src="img/loading-owl-2.gif" alt="CHUMBAK" class="intro-img">
+                    <h2 class="section-title">CHUMBAK - India's leading doodle brand
+                    </h2>
+                </div>
+            </header>
+        </section>
+        <section class="about-us">
+            <header class="aboutus-title">
+                <h3 class="main-title">Our Story
+                    <br>
+                    <small>Inspired by cultures and art forms from around the world, blended with a fun, colourful and modern aesthetic
+                        that is joyful and uplifting</small>
+                </h3>
+            </header>
+
+            <p class="aboutus-body">
+                It all started with Vivek and Shubhra’s love for travel  &amp; collecting souvenirs. In 2010 they founded Chumbak (Ch-oom-buck)
+                - it means a Magnet in Sanskrit- in Bangalore, with the idea of designing fun souvenirs  &amp; collectibles. Lorem
+                ipsum was conceived as filler text, formatted in a certain way to enable the presentation of graphic elements
+                in documents, without the need for formal copy.
+            </p>
+        </section>
+
+        <section class="features-all">
+            <header>
+                <h3 class="section-title">Why Chumbak</h3>
+            </header>
+            <div class="features">
+                <div class="feature ">
+                    <img src="img/feature_1.gif" alt="Unique" class="feature__img">
+
+                    <h5 class="feature-title">Elegant</h5>
+
+                </div>
+                <div class="feature ">
+                    <img src="img/feature_2.gif" alt="commited" class="feature__img">
+                    <h5 class="feature-title">Diverse</h5>
+                </div>
+                <div class="feature ">
+                    <img src="img/feature_3.gif" alt="diverse" class="feature__img">
+                    <h5 class="feature-title">Trendy</h5>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-all">
+            <header>
+                <h3 class="section-title">Our products</h3>
+            </header>
+            <div class="products">
+
+                <div class="product">
+                    <img src="img/product_1.jpg" alt="clothes" class="product__img">
+                    <div class="product-info">
+                        <h3 class="product-title">Clothing</h3>
+                        <p class="product-body">Wide range of clothing apparels and beauty products to make your dressing style more
+                            <strong> Chumbak</strong>
+                        </p>
+
+                    </div>
+
+                    <div class="outer-case">
+                        <a href="" class="explore">Explore more</a>
+                    </div>
+
+
+                </div>
+                <div class="product">
+                    <img src="img/product_2.jpg" alt="Accessories" class="product__img">
+                    <div class="product-info">
+                        <h3 class="product-title">Home and Decor</h3>
+                        <p class="product-body">Wide range of home and decore products to make your surroundings more
+
+                            <strong> Chumbak</strong> Lorem ipsum was conceived as filler text, formatted in a certain way to enable
+                            the presentation of graphic elements in documents, without the need for formal copy.Lorem ipsum
+                            was conceived as filler text, formatted in a certain way to enable the presentation of graphic
+                            elements in documents, without the need for formal copy. </p>
+
+                    </div>
+                    <div class="outer-case">
+                        <a href="" class="explore">Explore more</a>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+        <section class="testimonials">
+            <header>
+                <h3 class="section-title">What Customers Say!</h3>
+            </header>
+            <div id="carouselTestimonialSlidesOnly" class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active  thumbnail">
+
+                        <div class="testimonial">
+                            <div class="thumbnail-img">
+                                <img src="img/thumbnail.jpg" alt="">
+                            </div>
+                            <h3 class="tm-title">Aditee</h3>
+                            <p class="tm-body">Great design and fast service.Beautifuly crafted. Loved it! Lorem ipsum was conceived as filler
+                                text, formatted in a certain way to enable the presentation of graphic elements in documents,
+                                without the need for formal copy. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item  thumbnail">
+
+
+                        <div class="testimonial">
+                            <div class="thumbnail-img">
+                                <img src="img/thumbnail.jpg" alt="">
+                            </div>
+                            <h3 class="tm-title">Sameer Shetty</h3>
+                            <p class="tm-body">Great design and fast service.Beautifuly crafted. Loved it!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item thumbnail ">
+                        <div class="testimonial">
+                            <div class="thumbnail-img">
+                                <img src="img/thumbnail.jpg" alt="">
+                            </div>
+                            <h3 class="tm-title">Renu M.</h3>
+                            <p class="tm-body">Great design and fast service.Beautifuly crafted. Loved it!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter">
+            <div class="newsletter-intro">
+                <h3 class="newsletter-title">Hear from us!</h3>
+                <p class="newsletter-body">get the updated lattest designs very first in your inbox before anyone else. Lorem ipsum was conceived as
+                    filler text, formatted in a certain way to enable the presentation of graphic elements in documents,
+                    without the need for formal copy.
+
+                </p>
+            </div>
+            <div class="newsletter-input">
+                <input class="input-email" type="email" placeholder="Email">
+                <a href="#" class="explore ">Subscribe</a>
+            </div>
+        </section>
+        <section class="stores">
+
+        </section>
+        
+        <footer class="container-fluid footer">
+            <div class="row justify-content-center  " >
+                <div class="col-sm-2 ftr-col">
+                    <h3 class="footer-title">Get in Touch</h3>
+                    <p class="contact">We’re available by phone
+                        <br>
+                        <span>Toll Free</span>
+                        <br>(1800-420-1200)
+                        <br>Mon-Sat 10AM - 6PM IST
+                        <br>
+                        <span>Email :</span>
+                        <br>
+                        <a href="mailto:help@chumbak.in" >help@chumbak.in</a>
+                    </p>
+                </div>
+                <div class="col-sm-2 ftr-col">
+                    <h3 class=" footer-title">Need Help</h3>
+                    <ul>
+                        <li>
+                            <a href="/help">Help &amp; FAQ</a>
+                        </li>
+                        <li>
+                            <a  
+                        >
+                                Track Order
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/loyalty-program">Loyalty Program</a>
+                        </li>
+                        <li>
+                            <a href="/store-locator">Store Locator</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 ftr-col">
+                    <h3 class=" footer-title">About</h3>
+                    <ul>
+                        <li>
+                            <a href="/about">Our Story</a>
+                        </li>
+                        <li>
+                            <a href="/new-identity/">New Brand Identity</a>
+                        </li>
+                        <li>
+                            <a href="/careers">Careers</a>
+                        </li>
+                        <li>
+                            <a href="/corporate-gifting/">Bulk Orders</a>
+                        </li>
+                        <li>
+                            <a href="/contact-us">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 ftr-col">
+                    <h3 class=" footer-title">Company</h3>
+                    <ul>
+                        <li>
+                            <a href="/press">Press</a>
+                        </li>
+                        <li>
+                            <a href="/privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="/terms-and-conditions">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+               
+                
+            </div>
+            <div class="row  sub-footer">
+                    <div class="social">
+                            <h3 class="footer-title" >Our Social media handles</h3>
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://www.facebook.com/chumbak"><i class="fa fa-facebook"></i></a>
+                                
+                                    <a target="_blank" href="https://instagram.com/chumbak/"><i class="fa fa-instagram"></i></a>
+                                
+                                    <a target="_blank" href="https://in.pinterest.com/chumbak/"><i class="fa fa-pinterest"></i></a>
+                               
+                                    <a target="_blank" href="http://www.twitter.com/chumbak"><i class="fa fa-twitter" ></i></a>
+                                </li>
+                            </ul>
+                    </div> 
+                    <div class="apps" >
+                            <h3 class="footer-title">Our Apps</h3>
+                            <ul>
+                                <li>
+                                    <a target="_blank" class="" href="https://itunes.apple.com/in/app/chumbak-store/id1406750596?mt=8" rel="noopener">
+                                        <i class="fa fa-android" aria-hidden="true"></i>  
+                                    </a>
+                               
+                                    <a target="_blank" class="" href="https://play.google.com/store/apps/details?id=com.chumbak.shopping&amp;_branch_match_id=493692542807832082">
+                                        <i class="fa fa-apple" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
