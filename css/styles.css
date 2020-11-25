@@ -181,7 +181,7 @@ padding: 0.5em;
 flex: 1;
 
 }
-.chumbak-nav .btn.login {
+.chumbak-nav .login {
 margin: auto;
 padding: 0.4em;
 font-size: 0.6em;
@@ -193,7 +193,7 @@ overflow: hidden;
 text-transform: uppercase;
 
 }
-.chumbak-nav .btn.login:hover
+.chumbak-nav .login:hover
 {
   border: 1px solid darkred;
   color: darkred;
@@ -255,13 +255,14 @@ text-transform: uppercase;
     
   }
   .left-tabs{
+    order: 2;
     width: auto;
   }
   .left-icons{
     order: 1;
   }
   .border-item:after{
-    order: 2;
+    
     border-bottom: none;
   }
   

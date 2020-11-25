@@ -1,0 +1,22 @@
+@import  './_navbar';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0%;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    text-align: center;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0%;
+  }
