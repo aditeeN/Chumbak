@@ -9,17 +9,22 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel = "icon" href ="img/favicon.jpg" type = "image/x-icon"> 
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         $(function(){
             $(".toggle").on("click", function () {
-                if($(".item").hasClass("active")){
-                   $(".item").removeClass("active"); 
+                if($(".left-tabs , .right-tabs").hasClass("active")){
+                   $(".left-tabs, .right-tabs").removeClass("active"); 
                 }
                 else{
-                    $(".item").addClass("active");
+                    $(".left-tabs , .right-tabs").addClass("active");
                 }              
             })
         })
@@ -33,66 +38,58 @@
 
         <nav class="chumbak-nav">
             <ul>
-                <li class="left-icons">
-                    <li class=" toggle">
+                    <li class=" left-icons toggle">
                         <a href="#">
                             <i class="fas fa-bars"></i>
                         </a>
                     </li>
-                    <li class="search">
+                    <li class="left-icons search">
                         <a href="#">
                             <i class="fas fa-search"></i>
                         </a>
                     </li>
-                </li>
-                <div class="left-tabs ">
-                    <li class="item ">
+                    <li class="left-tabs item ">
                         <a href="#">Editorials</a>
                     </li>
-                    <li class="item ">
+                    <li class="left-tabs item ">
                         <a href="#">Fashion  &amp; Beauty</a>
                     </li>
-                    <li class="item">
+                    <li class="left-tabs item">
                         <a href="#">Home  &amp; Decor</a>
                     </li>
-                    <li class="item">
+                    <li class="left-tabs item">
                         <a href="#">Sale</a>
                     </li>
-                    <li class="item border-item">
+                    <li class="left-tabs item border-item">
                         <a href="#">Gifting</a>
                     </li>
-                </div>
 
 
-                <h2 class="logo">CHUMBAK</h2>
-                <div class="right-tabs">
-                    <li class="item">
+                <li class="logo">CHUMBAK</li>
+                    <li class="right-tabs item">
                         <a href="#">About Us</a>
                     </li>
-                    <li class="item">
+                    <li class="right-tabs item">
                         <a href="#">Our Stores</a>
                     </li>
-                    <li class="item log-in">
+                    <li class="right-tabs item log-in">
                         <a href="#">Login</a>
                     </li>
-                    <li class="item">
+                    <li class="right-tabs item">
                         <a href="#">Track Order</a>
                     </li>
-                    <li class="item">
+                    <li class="right-tabs item">
                         <a href="#">Contact Us</a>
                     </li>
 
-                </div>
-                <div class="right-icons">
-                    <li class="login-btn">
+                    <li class="right-icons login-btn">
                         <a href="#" class="login ">Login</a>
                     </li>
-                    <li class="cart">
+                    <li class="right-icons cart">
                         <a href="#">
                             <i class="fas fa-shopping-bag "></i>
                         </a>
                     </li>
-                </div>
 
             </ul>
         </nav>
@@ -117,18 +114,18 @@
             <header>
                 <div class="intro-info">
                     <img src="img/loading-owl-2.gif" alt="CHUMBAK" class="intro-img">
-                    <h2 class="section-title">CHUMBAK - India's leading doodle brand
-                    </h2>
+                    <h3 class="section-title">CHUMBAK - India's leading fashion brand
+                    </h3>
                 </div>
             </header>
         </section>
         <section class="about-us">
             <header class="aboutus-title">
-                <h3 class="main-title">Our Story
+                <h5 class="main-title">Our Story
                     <br>
                     <small>Inspired by cultures and art forms from around the world, blended with a fun, colourful and modern aesthetic
                         that is joyful and uplifting</small>
-                </h3>
+                </h5>
             </header>
 
             <p class="aboutus-body">
@@ -141,36 +138,36 @@
 
         <section class="features-all">
             <header>
-                <h3 class="section-title">Why Chumbak</h3>
+                <h4 class="section-title">Why Chumbak</h4>
             </header>
             <div class="features">
                 <div class="feature ">
                     <img src="img/feature_1.gif" alt="Unique" class="feature__img">
 
-                    <h5 class="feature-title">Elegant</h5>
+                    <h6 class="feature-title">Elegant</h6>
 
                 </div>
                 <div class="feature ">
                     <img src="img/feature_2.gif" alt="commited" class="feature__img">
-                    <h5 class="feature-title">Diverse</h5>
+                    <h6 class="feature-title">Diverse</h6>
                 </div>
                 <div class="feature ">
                     <img src="img/feature_3.gif" alt="diverse" class="feature__img">
-                    <h5 class="feature-title">Trendy</h5>
+                    <h6 class="feature-title">Trendy</h6>
                 </div>
             </div>
         </section>
 
         <section class="products-all">
             <header>
-                <h3 class="section-title">Our products</h3>
+                <h4 class="section-title">Our products</h4>
             </header>
             <div class="products">
 
                 <div class="product">
                     <img src="img/product_1.jpg" alt="clothes" class="product__img">
                     <div class="product-info">
-                        <h3 class="product-title">Clothing</h3>
+                        <h6 class="product-title">Clothing</h6>
                         <p class="product-body">Wide range of clothing apparels and beauty products to make your dressing style more
                             <strong> Chumbak</strong>
                         </p>
@@ -186,7 +183,7 @@
                 <div class="product">
                     <img src="img/product_2.jpg" alt="Accessories" class="product__img">
                     <div class="product-info">
-                        <h3 class="product-title">Home and Decor</h3>
+                        <h6 class="product-title">Home and Decor</h6>
                         <p class="product-body">Wide range of home and decore products to make your surroundings more
 
                             <strong> Chumbak</strong> Lorem ipsum was conceived as filler text, formatted in a certain way to enable
@@ -210,7 +207,7 @@
         </section>
         <section class="testimonials">
             <header>
-                <h3 class="section-title">What Customers Say!</h3>
+                <h4 class="section-title">What Customers Say!</h4>
             </header>
             <div id="carouselTestimonialSlidesOnly" class="carousel slide " data-ride="carousel">
                 <div class="carousel-inner">
@@ -220,7 +217,7 @@
                             <div class="thumbnail-img">
                                 <img src="img/thumbnail.jpg" alt="">
                             </div>
-                            <h3 class="tm-title">Aditee</h3>
+                            <h5 class="tm-title">Aditee</h5>
                             <p class="tm-body">Great design and fast service.Beautifuly crafted. Loved it! Lorem ipsum was conceived as filler
                                 text, formatted in a certain way to enable the presentation of graphic elements in documents,
                                 without the need for formal copy. </p>
@@ -233,7 +230,7 @@
                             <div class="thumbnail-img">
                                 <img src="img/thumbnail.jpg" alt="">
                             </div>
-                            <h3 class="tm-title">Sameer Shetty</h3>
+                            <h5 class="tm-title">Sameer Shetty</h5>
                             <p class="tm-body">Great design and fast service.Beautifuly crafted. Loved it!</p>
                         </div>
                     </div>
@@ -242,7 +239,7 @@
                             <div class="thumbnail-img">
                                 <img src="img/thumbnail.jpg" alt="">
                             </div>
-                            <h3 class="tm-title">Renu M.</h3>
+                            <h5 class="tm-title">Renu M.</h5>
                             <p class="tm-body">Great design and fast service.Beautifuly crafted. Loved it!</p>
                         </div>
                     </div>
@@ -251,7 +248,7 @@
         </section>
         <section class="newsletter">
             <div class="newsletter-intro">
-                <h3 class="newsletter-title">Hear from us!</h3>
+                <h5 class="newsletter-title">Hear from us!</h5>
                 <p class="newsletter-body">get the updated lattest designs very first in your inbox before anyone else. Lorem ipsum was conceived as
                     filler text, formatted in a certain way to enable the presentation of graphic elements in documents,
                     without the need for formal copy.
@@ -270,7 +267,7 @@
         <footer class="container-fluid footer">
             <div class="row justify-content-center  " >
                 <div class="col-sm-2 ftr-col">
-                    <h3 class="footer-title">Get in Touch</h3>
+                    <h5 class="footer-title">Get in Touch</h5>
                     <p class="contact">We’re available by phone
                         <br>
                         <span>Toll Free</span>
@@ -283,56 +280,53 @@
                     </p>
                 </div>
                 <div class="col-sm-2 ftr-col">
-                    <h3 class=" footer-title">Need Help</h3>
+                    <h5 class=" footer-title">Need Help</h5>
                     <ul>
                         <li>
-                            <a href="/help">Help &amp; FAQ</a>
+                            <a href="#">Help &amp; FAQ</a>
                         </li>
                         <li>
-                            <a  
-                        >
-                                Track Order
-                            </a>
+                            <a href="#">Track Order</a>
                         </li>
                         <li>
-                            <a href="/loyalty-program">Loyalty Program</a>
+                            <a href="#">Loyalty Program</a>
                         </li>
                         <li>
-                            <a href="/store-locator">Store Locator</a>
+                            <a href="#">Store Locator</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-sm-2 ftr-col">
-                    <h3 class=" footer-title">About</h3>
+                    <h5 class=" footer-title">About</h5>
                     <ul>
                         <li>
-                            <a href="/about">Our Story</a>
+                            <a href="#">Our Story</a>
                         </li>
                         <li>
-                            <a href="/new-identity/">New Brand Identity</a>
+                            <a href="#">New Brand Identity</a>
                         </li>
                         <li>
-                            <a href="/careers">Careers</a>
+                            <a href="#">Careers</a>
                         </li>
                         <li>
-                            <a href="/corporate-gifting/">Bulk Orders</a>
+                            <a href="#">Bulk Orders</a>
                         </li>
                         <li>
-                            <a href="/contact-us">Contact</a>
+                            <a href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-sm-2 ftr-col">
-                    <h3 class=" footer-title">Company</h3>
+                    <h5 class=" footer-title">Company</h5>
                     <ul>
                         <li>
-                            <a href="/press">Press</a>
+                            <a href="#">Press</a>
                         </li>
                         <li>
-                            <a href="/privacy-policy">Privacy Policy</a>
+                            <a href="#">Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="/terms-and-conditions">Terms of Use</a>
+                            <a href="#">Terms of Use</a>
                         </li>
                     </ul>
                 </div>
@@ -341,7 +335,7 @@
             </div>
             <div class="row  sub-footer">
                     <div class="social">
-                            <h3 class="footer-title" >Our Social media handles</h3>
+                            <h5 class="footer-title" >Our Social media handles</h5>
                             <ul>
                                 <li>
                                     <a target="_blank" href="https://www.facebook.com/chumbak"><i class="fa fa-facebook"></i></a>
@@ -355,7 +349,7 @@
                             </ul>
                     </div> 
                     <div class="apps" >
-                            <h3 class="footer-title">Our Apps</h3>
+                            <h5 class="footer-title">Our Apps</h5>
                             <ul>
                                 <li>
                                     <a target="_blank" class="" href="https://itunes.apple.com/in/app/chumbak-store/id1406750596?mt=8" rel="noopener">
